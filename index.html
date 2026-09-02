@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecobex | Where Waste Meets Energy Innovation</title>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
     <style>
         :root {
             --cyan: #00aeb3;
@@ -337,6 +338,23 @@
             color: var(--pink);
         }
 
+        /* SCROLL REVEAL ANIMATIONS */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 0.15s; }
+        .reveal-delay-2 { transition-delay: 0.3s; }
+        .reveal-delay-3 { transition-delay: 0.45s; }
+
         @media (max-width: 992px) {
             header {
                 padding: 20px 30px;
@@ -391,10 +409,10 @@
         </video>
         <div class="video-overlay"></div>
         <div class="section-content">
-            <div class="subtitle">Pioneering Sustainable Resource Recovery</div>
-            <h1>Where Waste Meets <span>Energy Innovation</span></h1>
-            <p>Transforming industrial, municipal, and post-consumer waste into high-value resources and clean energy. Leading Malaysia's transition to a circular economy through cutting-edge waste-to-energy solutions.</p>
-            <a href="#purpose" class="btn-spacex">Partner With Us &rarr;</a>
+            <div class="subtitle reveal">Pioneering Sustainable Resource Recovery</div>
+            <h1 class="reveal reveal-delay-1">Where Waste Meets <span>Energy Innovation</span></h1>
+            <p class="reveal reveal-delay-2">Transforming industrial, municipal, and post-consumer waste into high-value resources and clean energy. Leading Malaysia's transition to a circular economy through cutting-edge waste-to-energy solutions.</p>
+            <a href="#purpose" class="btn-spacex reveal reveal-delay-3">Partner With Us →</a>
         </div>
     </section>
 
@@ -404,11 +422,11 @@
         </video>
         <div class="video-overlay"></div>
         <div class="section-content">
-            <div class="subtitle">Committed to Creating a Green Environment</div>
-            <h1>Driven By <span>Mission & Vision</span></h1>
-            <p><strong>Mission:</strong> Transform waste liabilities into strategic assets through technology-driven recovery processes, enabling industries to achieve carbon reduction and ESG compliance while advancing resource productivity.</p>
-            <p><strong>Vision:</strong> Establish Malaysia as a regional benchmark for circular economy innovation through scalable waste-to-energy systems and zero-landfill solutions.</p>
-            <a href="#tech-1" class="btn-spacex btn-pink">Our Technologies &rarr;</a>
+            <div class="subtitle reveal">Committed to Creating a Green Environment</div>
+            <h1 class="reveal reveal-delay-1">Driven By <span>Mission & Vision</span></h1>
+            <p class="reveal reveal-delay-2"><strong>Mission:</strong> Transform waste liabilities into strategic assets through technology-driven recovery processes, enabling industries to achieve carbon reduction and ESG compliance while advancing resource productivity.</p>
+            <p class="reveal reveal-delay-2"><strong>Vision:</strong> Establish Malaysia as a regional benchmark for circular economy innovation through scalable waste-to-energy systems and zero-landfill solutions.</p>
+            <a href="#tech-1" class="btn-spacex btn-pink reveal reveal-delay-3">Our Technologies →</a>
         </div>
     </section>
 
@@ -418,10 +436,10 @@
         </video>
         <div class="video-overlay"></div>
         <div class="section-content">
-            <div class="subtitle">Core Capabilities & Systems</div>
-            <h1>Resource <span>Recovery & Circular Solutions</span></h1>
+            <div class="subtitle reveal">Core Capabilities & Systems</div>
+            <h1 class="reveal reveal-delay-1">Resource <span>Recovery & Circular Solutions</span></h1>
             
-            <div class="tech-split-grid">
+            <div class="tech-split-grid reveal reveal-delay-2">
                 <div class="tech-mini-card">
                     <h3>Tire Valorization</h3>
                     <p>End-to-end tire recycling via certified collection, shredding, and pyrolysis to produce Tire-Derived Alternative Fuel (TDAF).</p>
@@ -440,7 +458,7 @@
                 </div>
             </div>
 
-            <a href="#impact" class="btn-spacex">View Impact &rarr;</a>
+            <a href="#impact" class="btn-spacex reveal reveal-delay-3">View Impact →</a>
         </div>
     </section>
 
@@ -450,10 +468,10 @@
         </video>
         <div class="video-overlay"></div>
         <div class="section-content">
-            <div class="subtitle">Engineering Malaysia's Waste-to-Energy Future</div>
-            <h1>Sustainability <span>Impact</span></h1>
+            <div class="subtitle reveal">Engineering Malaysia's Waste-to-Energy Future</div>
+            <h1 class="reveal reveal-delay-1">Sustainability <span>Impact</span></h1>
             
-            <div class="stats-grid">
+            <div class="stats-grid reveal reveal-delay-2">
                 <div class="stat-item">
                     <h3>98<span>%</span></h3>
                     <p>Landfill Diversion</p>
@@ -472,23 +490,23 @@
                 </div>
             </div>
 
-            <p style="margin-bottom: 8px;"><strong>UN SDG Alignment:</strong></p>
-            <p style="font-size: 0.95rem; margin-bottom: 25px; line-height: 1.6;">
+            <p class="reveal reveal-delay-2" style="margin-bottom: 8px;"><strong>UN SDG Alignment:</strong></p>
+            <p class="reveal reveal-delay-2" style="font-size: 0.95rem; margin-bottom: 25px; line-height: 1.6;">
                 • SDG 7: Affordable and Clean Energy<br>
                 • SDG 12: Responsible Consumption and Production<br>
                 • SDG 13: Climate Action
             </p>
 
-            <a href="#location" class="btn-spacex">Find Our Location &rarr;</a>
+            <a href="#location" class="btn-spacex reveal reveal-delay-3">Find Our Location →</a>
         </div>
     </section>
 
     <section id="location" class="map-section">
-        <div class="map-header">
+        <div class="map-header reveal">
             <div class="subtitle" style="color: var(--pink); font-size: 0.9rem; font-weight: 800; letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 12px;">Operational Hub</div>
             <h1 style="font-size: 3rem; font-weight: 800; text-transform: uppercase; color: var(--white); line-height: 1.1;">Our <span>Facility Location</span></h1>
         </div>
-        <div class="map-container">
+        <div class="map-container reveal reveal-delay-1">
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7943.759381693917!2d100.38805909814907!3d5.435237849268278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac4fbe4f88ac3%3A0xe4280eb1185658d2!2sEcobex%20Sdn%20Bhd!5e0!3m2!1sen!2smy!4v1788283041190!5m2!1sen!2smy" 
                 allowfullscreen="" 
@@ -499,7 +517,7 @@
     </section>
 
     <footer id="contact">
-        <div class="footer-grid">
+        <div class="footer-grid reveal">
             <div class="footer-col">
                 <h4>Headquarters</h4>
                 <p>No. 128 & 130, Lorong Industri 3/7</p>
@@ -521,10 +539,43 @@
             </div>
         </div>
         <div class="copyright">
-            &copy; 2026 ECOBEX Resources Sdn Bhd. All rights reserved.<br>
+            © 2026 ECOBEX Resources Sdn Bhd. All rights reserved.<br>
             <span>ECOBEX – Where Waste Meets Energy Innovation™</span>
         </div>
     </footer>
 
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script>
+        // Initialize Smooth Scroll (Lenis)
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smoothWheel: true,
+            wheelMultiplier: 1,
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+
+        // Scroll-triggered Reveal Animations via IntersectionObserver
+        const observerOptions = {
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
